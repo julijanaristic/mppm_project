@@ -1,12 +1,68 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\cimadapter\\importer\\powertransformerconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\importer\\powertransformerconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\cimadapter\\importer\\importhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\importer\\importhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\cimadapter\\lib\\powertransformercimprofile_labs.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\lib\\powertransformercimprofile_labs.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PowerTransformerConverter.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\PowerTransformerConverter.cs",
+              "RelativeDocumentMoniker": "CIMAdapter\\Importer\\PowerTransformerConverter.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\PowerTransformerConverter.cs",
+              "RelativeToolTip": "CIMAdapter\\Importer\\PowerTransformerConverter.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAwwLsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T21:21:21.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImportHelper.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\ImportHelper.cs",
+              "RelativeDocumentMoniker": "CIMAdapter\\Importer\\ImportHelper.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\ImportHelper.cs",
+              "RelativeToolTip": "CIMAdapter\\Importer\\ImportHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T21:28:36.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PowerTransformerCIMProfile_Labs.dll",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
+              "RelativeDocumentMoniker": "CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
+              "RelativeToolTip": "CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-01-24T21:26:28.417Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
