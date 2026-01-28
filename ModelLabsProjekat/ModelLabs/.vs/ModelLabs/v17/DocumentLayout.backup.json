@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\cimadapter\\importer\\powertransformerimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\importer\\powertransformerimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\core\\identifiedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\core\\identifiedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\cimadapter\\cimadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\cimadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\cimadapter\\manager\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\manager\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\cimadapter\\importer\\importhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\importer\\importhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\core\\conductingequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\core\\conductingequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\common\\modeldefines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|solutionrelative:common\\modeldefines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\cimadapter\\lib\\powertransformercimprofile_labs.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{F680D34F-C148-4314-8914-B2DF3E7B17AF}|CIMAdapter\\CIMAdapter.csproj|solutionrelative:cimadapter\\lib\\powertransformercimprofile_labs.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\common\\modelresourcesdesc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|solutionrelative:common\\modelresourcesdesc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,78 +31,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PowerTransformerImporter.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\PowerTransformerImporter.cs",
-              "RelativeDocumentMoniker": "CIMAdapter\\Importer\\PowerTransformerImporter.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\PowerTransformerImporter.cs",
-              "RelativeToolTip": "CIMAdapter\\Importer\\PowerTransformerImporter.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAowPMAAAAFAAAAAAAAAA==",
+              "Title": "IdentifiedObject.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
+              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
+              "RelativeToolTip": "NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T22:58:42.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogManager.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Manager\\LogManager.cs",
-              "RelativeDocumentMoniker": "CIMAdapter\\Manager\\LogManager.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Manager\\LogManager.cs",
-              "RelativeToolTip": "CIMAdapter\\Manager\\LogManager.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T22:56:48.467Z",
+              "WhenOpened": "2026-01-27T22:24:57.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CIMAdapter.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\CIMAdapter.cs",
-              "RelativeDocumentMoniker": "CIMAdapter\\CIMAdapter.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\CIMAdapter.cs",
-              "RelativeToolTip": "CIMAdapter\\CIMAdapter.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAAwKMAAAAAAAAAAAAAAA==",
+              "Title": "ConductingEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
+              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
+              "RelativeToolTip": "NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T22:55:42.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ModelDefines.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
-              "RelativeDocumentMoniker": "Common\\ModelDefines.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
-              "RelativeToolTip": "Common\\ModelDefines.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T22:11:43.237Z",
+              "WhenOpened": "2026-01-27T22:24:53.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ImportHelper.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\ImportHelper.cs",
-              "RelativeDocumentMoniker": "CIMAdapter\\Importer\\ImportHelper.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Importer\\ImportHelper.cs",
-              "RelativeToolTip": "CIMAdapter\\Importer\\ImportHelper.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwEcAAAAAAAAAAAAAAA==",
+              "Title": "ModelResourcesDesc.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelResourcesDesc.cs",
+              "RelativeDocumentMoniker": "Common\\ModelResourcesDesc.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelResourcesDesc.cs",
+              "RelativeToolTip": "Common\\ModelResourcesDesc.cs",
+              "ViewState": "AgIAAGEDAAAAAAAAAAAQwK0DAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T21:28:36.612Z",
+              "WhenOpened": "2026-01-27T22:19:52.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PowerTransformerCIMProfile_Labs.dll",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
-              "RelativeDocumentMoniker": "CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
-              "RelativeToolTip": "CIMAdapter\\Lib\\PowerTransformerCIMProfile_Labs.dll",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
-              "WhenOpened": "2026-01-24T21:26:28.417Z"
+              "DocumentIndex": 2,
+              "Title": "ModelDefines.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
+              "RelativeDocumentMoniker": "Common\\ModelDefines.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
+              "RelativeToolTip": "Common\\ModelDefines.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T22:19:51.555Z",
+              "EditorCaption": ""
             }
           ]
         }

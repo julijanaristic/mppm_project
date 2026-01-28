@@ -54,8 +54,6 @@
 		}
         #endregion Populate ResourceDescription
 
-        // fali conductor, rectifierInverter, 
-
         #region Conductor
 		public static void PopulateConductorProperties(FTN.Conductor cimConductor, ResourceDescription rd, ImportHelper importHelper, TransformAndLoadReport report)
 		{

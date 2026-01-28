@@ -151,14 +151,6 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
     <rdfs:comment xml:space="preserve">Unit of length. Never negative.</rdfs:comment>
     <rdfs:label>Length</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="#ModelingAuthoritySet">
-    <cims:belongsToCategory rdf:resource="#Package_InfCore"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:comment xml:space="preserve">A Modeling Authority Set is a group of objects in a network model where the data is supplied and maintained by the same Modeling Authority.
-This class is typically not included in instance data exchange as this information is tracked by other mechanisms in the exchange.</rdfs:comment>
-    <rdfs:label>ModelingAuthoritySet</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#Package_Core">
     <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
     <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
@@ -175,18 +167,6 @@ This class is typically not included in instance data exchange as this informati
     <cims:belongsToCategory rdf:resource="#Package_TC57CIM"/>
     <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
     <rdfs:label>IES_Projects</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_InfCore">
-    <cims:belongsToCategory rdf:resource="#Package_InfIEC61970"/>
-    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
-    <rdfs:label>InfCore</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_InfIEC61970">
-    <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
-    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
-    <rdfs:comment xml:space="preserve">This package and its subpackages contain informative (unstable) elements of the model, expected to evolve a lot or to be removed, and not published as IEC document yet. Some portions of it will be reworked and moved to normative packages as the need arises, and some portions may be removed.
-WG13 does not generate documentation for this informative portion of the model.</rdfs:comment>
-    <rdfs:label>InfIEC61970</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="#Package_TC57CIM">
     <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
