@@ -17,6 +17,21 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
         {
         }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object x)
+        {
+            if (base.Equals(x))
+            {
+                Clamp obj = (Clamp)x;
+                return obj.lengthFromTerminal == lengthFromTerminal && obj.acLineSegment == acLineSegment;
+            }
+
+            return false;
+        }
         public float LengthFromTerminal
         {
             get { return lengthFromTerminal; }
@@ -74,5 +89,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 
             base.GetReferences(references, refType);
         }
+
     }
 }

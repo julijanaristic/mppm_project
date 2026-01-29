@@ -1,4 +1,6 @@
-﻿using FTN.Services.NetworkModelService.DataModel.Core;
+﻿using FTN.Common;
+using FTN.Services.NetworkModelService.DataModel.Core;
+using System.Collections.Generic;
 
 namespace FTN.Services.NetworkModelService.DataModel.Wires
 {
@@ -7,6 +9,16 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
         public RectifierInverter(long globalId)
             : base(globalId)
         {
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
         }
     }
 }

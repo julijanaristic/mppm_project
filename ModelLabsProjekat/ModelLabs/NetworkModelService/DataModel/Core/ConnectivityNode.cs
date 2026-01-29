@@ -14,6 +14,20 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             : base(globalId)
         {
         }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object x)
+        {
+            if (base.Equals(x))
+            {
+                ConnectivityNode obj = (ConnectivityNode)x;
+                return terminals.SequenceEqual(obj.terminals);
+            }
+            return false;
+        }
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
         {

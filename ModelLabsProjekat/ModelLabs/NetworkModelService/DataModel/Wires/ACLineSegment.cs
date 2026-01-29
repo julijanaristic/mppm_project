@@ -1,10 +1,7 @@
 ﻿using FTN.Common;
 using FTN.Services.NetworkModelService.DataModel.Core;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Wires
 {
@@ -14,6 +11,21 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
         public ACLineSegment(long globalId)
             : base(globalId)
         {
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object x)
+        {
+            if (base.Equals(x))
+            {
+                ACLineSegment obj = (ACLineSegment)x;
+                return clamps.SequenceEqual(obj.clamps);
+            }
+            return false;
         }
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)

@@ -9,7 +9,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 {
     public class Terminal: IdentifiedObject
     {
-        // dodaj polja i reference
         private bool connected;
         private PhaseCode phases;
         private int sequenceNumber;
@@ -40,7 +39,23 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             set { sequenceNumber = value; }
         }
 
-        #region IAcces
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object x)
+        {
+            if (base.Equals(x))
+            {
+                Terminal obj = (Terminal)x;
+                return obj.connected == connected && obj.phases == phases && obj.sequenceNumber == sequenceNumber && obj.conductingEquipment == conductingEquipment && obj.connectivityNode == connectivityNode;
+            }
+
+            return false;
+        }
+
+        #region IAccess
         public override bool HasProperty(ModelCode property)
         {
             switch (property)

@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\core\\identifiedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\core\\identifiedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\wires\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\wires\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\core\\conductingequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\core\\conductingequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\wires\\clamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\wires\\clamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\common\\modeldefines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|solutionrelative:common\\modeldefines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\common\\modelresourcesdesc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|solutionrelative:common\\modelresourcesdesc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\wires\\aclinesegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\wires\\aclinesegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IdentifiedObject.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
-              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
-              "RelativeToolTip": "NetworkModelService\\DataModel\\Core\\IdentifiedObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ACLineSegment.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
+              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
+              "RelativeToolTip": "NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T22:24:57.857Z",
+              "WhenOpened": "2026-01-28T21:19:57.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConductingEquipment.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
-              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
-              "RelativeToolTip": "NetworkModelService\\DataModel\\Core\\ConductingEquipment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Clamp.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Clamp.cs",
+              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Wires\\Clamp.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Clamp.cs",
+              "RelativeToolTip": "NetworkModelService\\DataModel\\Wires\\Clamp.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T22:24:53.712Z",
+              "WhenOpened": "2026-01-28T21:17:52.8Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "ff2181e9-1e71-4487-9153-909c5a95e6ee",
+        "Display": 1,
+        "X": 609,
+        "Y": 179,
+        "Width": 1182,
+        "Height": 730,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ModelResourcesDesc.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelResourcesDesc.cs",
-              "RelativeDocumentMoniker": "Common\\ModelResourcesDesc.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelResourcesDesc.cs",
-              "RelativeToolTip": "Common\\ModelResourcesDesc.cs",
-              "ViewState": "AgIAAGEDAAAAAAAAAAAQwK0DAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Conductor.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Conductor.cs",
+              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Wires\\Conductor.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Conductor.cs",
+              "RelativeToolTip": "NetworkModelService\\DataModel\\Wires\\Conductor.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T22:19:52.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModelDefines.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
-              "RelativeDocumentMoniker": "Common\\ModelDefines.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
-              "RelativeToolTip": "Common\\ModelDefines.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T22:19:51.555Z",
+              "WhenOpened": "2026-01-28T21:17:46.361Z",
               "EditorCaption": ""
             }
           ]

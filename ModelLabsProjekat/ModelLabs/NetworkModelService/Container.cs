@@ -115,27 +115,27 @@ namespace FTN.Services.NetworkModelService
 		/// </summary>
 		/// <param name="globalId">Global id of the entity for insert</param>		
 		/// <returns>Created entity (identified object).</returns>
-		public IdentifiedObject CreateEntity(string mrid)
+		public IdentifiedObject CreateEntity(long globalId)
 		{
-			short type = ModelCodeHelper.ExtractTypeFromGlobalId(mrid);
+			short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
 
 			IdentifiedObject io = null;			
 			switch ((DMSType)type)
 			{
 				case DMSType.RECTIFIERINVERTER:
-					io = new RectifierInverter(mrid);
+					io = new RectifierInverter(globalId);
 					break;
 				case DMSType.ACLINESEGMENT:
-					io = new ACLineSegment(mrid);
+					io = new ACLineSegment(globalId);
 					break;
 				case DMSType.CLAMP:
-					io = new Clamp(mrid);
+					io = new Clamp(globalId);
 					break;
 				case DMSType.TERMINAL:
-					io = new Terminal(mrid);
+					io = new Terminal(globalId);
 					break;
 				case DMSType.CONNECTIVITYNODE:
-					io = new ConnectivityNode(mrid);
+					io = new ConnectivityNode(globalId);
 					break;			
 
 				default:					

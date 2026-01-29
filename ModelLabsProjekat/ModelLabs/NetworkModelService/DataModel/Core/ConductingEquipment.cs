@@ -1,6 +1,7 @@
 ﻿using FTN.Common;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
@@ -10,6 +11,21 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		public ConductingEquipment(long globalId) : base(globalId) 
 		{
 		}
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object x)
+        {
+            if (base.Equals(x))
+            {
+                ConductingEquipment obj = (ConductingEquipment)x;
+                return terminals.SequenceEqual(obj.terminals);
+            }
+            return false;
+        }
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
         {
