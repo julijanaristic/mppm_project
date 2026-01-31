@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
-    public class Terminal: IdentifiedObject
+    public class Terminal : IdentifiedObject
     {
         private bool connected;
         private PhaseCode phases;
@@ -136,6 +136,11 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             }
 
             base.GetReferences(references, refType);
+        }
+
+        public override bool IsReferenced
+        {
+            get { return conductingEquipment != 0 || connectivityNode != 0; }
         }
         #endregion
     }

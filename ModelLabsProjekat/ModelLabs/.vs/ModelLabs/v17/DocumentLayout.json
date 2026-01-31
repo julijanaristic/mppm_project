@@ -1,12 +1,70 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\nmstestclientgui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|solutionrelative:nmstestclientgui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Snippet{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\RdfSnippet.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Snippet{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:RdfSnippet.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\nmstestclientgui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|solutionrelative:nmstestclientgui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RdfSnippet.xml",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\RdfSnippet.xml",
+              "RelativeDocumentMoniker": "RdfSnippet.xml",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\RdfSnippet.xml",
+              "RelativeToolTip": "RdfSnippet.xml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-01-31T00:29:45.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "NMSTestClientGUI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml",
+              "RelativeToolTip": "NMSTestClientGUI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T23:40:56.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "NMSTestClientGUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "NMSTestClientGUI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAwDUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T23:36:55.919Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

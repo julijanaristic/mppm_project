@@ -20,7 +20,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 	{			
 
 		private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
-
+        
 		private NetworkModelGDAProxy gdaQueryProxy = null;
 		private NetworkModelGDAProxy GdaQueryProxy
 		{
@@ -156,15 +156,13 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
             CommonTrace.WriteTrace(CommonTrace.TraceError, message);
 			
 			List<long> resultIds = new List<long>();
-
-			
 			XmlTextWriter xmlWriter = null;
 			int numberOfResources = 2;
 
 			try
 			{						
 				List<ModelCode> properties = new List<ModelCode>();
-                properties.Add(ModelCode.IDOBJ_DESCRIPTION);
+                properties.Add(ModelCode.IDOBJ_ALIASNAME);
                 properties.Add(ModelCode.IDOBJ_MRID);
                 properties.Add(ModelCode.IDOBJ_NAME);
 						
@@ -760,5 +758,85 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 		{
 			GC.SuppressFinalize(this);
 		}
+
+        public List<long> GetClampsForACLineSegment(long acLineSegmentGid)
+        {
+            Console.WriteLine("Getting clamps for ACLineSegment...");
+
+            Association association = new Association
+            {
+                PropertyId = ModelCode.ACLINESEGMENT_CLAMP,
+                Type = ModelCode.CLAMP
+            };
+
+            return GetRelatedValues(acLineSegmentGid, association);
+        }
+
+        public long GetClampWithMinLength(long acLineSegmentGid)
+        {
+            Console.WriteLine("Getting clamp with minimal lengthFromTerminal...");
+
+            List<long> clampIds = GetClampsForACLineSegment(acLineSegmentGid);
+
+            double minLength = double.MaxValue;
+            long resultGid = 0;
+
+            foreach(long clampGid in clampIds)
+            {
+                ResourceDescription rd = GetValues(clampGid);
+                Property p = rd.GetProperty(ModelCode.CLAMP_LENGTHFROMTERMINAL);
+
+                if (p != null)
+                {
+                    double length = p.AsFloat();
+
+                    if (length < minLength)
+                    {
+                        minLength = length;
+                        resultGid = clampGid;
+                    }
+                }
+            }
+
+            Console.WriteLine($"Clamp with minimal length: {resultGid}");
+            return resultGid;
+        }
+
+        public List<long> GetTerminalsForConductingEquipment(long conductingEpGid)
+        {
+            Console.WriteLine("Getting terminals for ConductingEquipment...");
+
+            Association association = new Association
+            {
+                PropertyId = ModelCode.CONDEQ_TERMINAL,
+                Type = ModelCode.TERMINAL
+            };
+
+            return GetRelatedValues(conductingEpGid, association);
+        }
+
+        public List<long> GetDisconnectedTerminals()
+        {
+            Console.WriteLine("Getting disconnected terminals...");
+
+            List<long> result = new List<long>();
+            List<long> terminalIds = GetExtentValues(ModelCode.TERMINAL);
+
+            foreach (long gid in terminalIds)
+            {
+                ResourceDescription rd = GetValues(gid);
+                Property p = rd.GetProperty(ModelCode.TERMINAL_CONNECTED);
+
+                if (p != null && p.AsBool() == false)
+                {
+                    result.Add(gid);
+                }
+            }
+
+            Console.WriteLine($"Disconnected terminals count: {result.Count}");
+            return result;
+        }
+
+
 	}
 }

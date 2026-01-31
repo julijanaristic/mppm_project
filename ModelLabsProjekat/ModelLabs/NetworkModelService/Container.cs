@@ -131,12 +131,13 @@ namespace FTN.Services.NetworkModelService
 				case DMSType.CLAMP:
 					io = new Clamp(globalId);
 					break;
-				case DMSType.TERMINAL:
+                case DMSType.CONNECTIVITYNODE:
+                    io = new ConnectivityNode(globalId);
+                    break;
+                case DMSType.TERMINAL:
 					io = new Terminal(globalId);
 					break;
-				case DMSType.CONNECTIVITYNODE:
-					io = new ConnectivityNode(globalId);
-					break;			
+							
 
 				default:					
 					string message = String.Format("Failed to create entity because specified type ({0}) is not supported.", type);

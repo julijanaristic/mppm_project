@@ -18,6 +18,32 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
             return base.GetHashCode();
         }
 
+        public override bool HasProperty(ModelCode property)
+        {
+            switch (property)
+            {
+                case ModelCode.ACLINESEGMENT_CLAMP:
+                    return true;
+
+                default:
+                    return base.HasProperty(property);
+            }
+        }
+
+        public override void GetProperty(Property property)
+        {
+            switch (property.Id)
+            {
+                case ModelCode.ACLINESEGMENT_CLAMP:
+                    property.SetValue(clamps);
+                    break;
+
+                default:
+                    base.GetProperty(property);
+                    break;
+            }
+        }
+
         public override bool Equals(object x)
         {
             if (base.Equals(x))
@@ -40,25 +66,29 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 
         public override void AddReference(ModelCode referenceId, long globalId)
         {
-            if (referenceId == ModelCode.CLAMP_ACLINESEGMENT)
+            switch (referenceId)
             {
-                clamps.Add(globalId);
-            }
-            else
-            {
-                base.AddReference(referenceId, globalId);
+                case ModelCode.CLAMP_ACLINESEGMENT:
+                    clamps.Add(globalId); 
+                    break;
+
+                default:
+                    base.AddReference(referenceId, globalId);
+                    break;
             }
         }
 
         public override void RemoveReference(ModelCode referenceId, long globalId)
         {
-            if (referenceId == ModelCode.CLAMP_ACLINESEGMENT)
+            switch (referenceId)
             {
-                clamps.Remove(globalId);
-            }
-            else
-            {
-                base.RemoveReference(referenceId, globalId);
+                case ModelCode.CLAMP_ACLINESEGMENT:
+                    clamps.Remove(globalId);
+                    break;
+
+                default:
+                    base.RemoveReference(referenceId, globalId);
+                    break;
             }
         }
 

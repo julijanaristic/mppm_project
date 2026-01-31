@@ -22,9 +22,43 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             if (base.Equals(x))
             {
                 ConductingEquipment obj = (ConductingEquipment)x;
-                return terminals.SequenceEqual(obj.terminals);
+                return (CompareHelper.CompareLists(obj.terminals, this.terminals));
             }
             return false;
+        }
+
+        public override bool HasProperty(ModelCode property)
+        {
+            switch (property)
+            {
+                case ModelCode.CONDEQ_TERMINAL:
+                    return true;
+                default:
+                    return base.HasProperty(property);
+            }
+        }
+
+        public override void GetProperty(Property property)
+        {
+            switch (property.Id)
+            {
+                case ModelCode.CONDEQ_TERMINAL:
+                    property.SetValue(terminals);
+                    break;
+                default:
+                    base.GetProperty(property);
+                    break;
+            }
+        }
+
+        public override void SetProperty(Property property)
+        {
+            switch (property.Id)
+            {
+                default:
+                    base.SetProperty(property);
+                    break;
+            }
         }
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
@@ -39,25 +73,28 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
         public override void AddReference(ModelCode referenceId, long globalId)
         {
-            if (referenceId == ModelCode.TERMINAL_CONDEQ)
-			{
-				terminals.Add(globalId);
-			}
-            else
+            switch (referenceId)
             {
-				base.AddReference(referenceId, globalId);
+                case ModelCode.TERMINAL_CONDEQ:
+                    terminals.Add(globalId);
+                    break;
+                default:
+                    base.AddReference(referenceId, globalId);
+                    break;
             }
         }
 
         public override void RemoveReference(ModelCode referenceId, long globalId)
         {
-            if (referenceId == ModelCode.TERMINAL_CONDEQ)
+            switch (referenceId)
             {
-                terminals.Remove(globalId);
-            }
-            else
-            {
-                base.RemoveReference(referenceId, globalId);
+                case ModelCode.TERMINAL_CONDEQ:
+                    if (terminals.Contains(globalId))
+                        terminals.Remove(globalId);
+                    break;
+                default:
+                    base.RemoveReference(referenceId, globalId);
+                    break;
             }
         }
 

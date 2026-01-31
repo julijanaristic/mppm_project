@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\wires\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\wires\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\nmstestclientgui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|solutionrelative:nmstestclientgui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\wires\\clamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\wires\\clamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\networkmodelservice\\datamodel\\wires\\aclinesegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADE96497-7C11-40B6-AE82-57F956C9F104}|NetworkModelService\\DataModel\\DataModel.csproj|solutionrelative:networkmodelservice\\datamodel\\wires\\aclinesegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|c:\\users\\korisnik\\documents\\github\\mppm_project\\modellabsprojekat\\modellabs\\nmstestclientgui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34B745D7-1E4A-4579-8F82-179E348A3052}|NMSTestClientGUI\\NMSTestClientGUI.csproj|solutionrelative:nmstestclientgui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +22,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ACLineSegment.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
-              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
-              "RelativeToolTip": "NetworkModelService\\DataModel\\Wires\\ACLineSegment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T21:19:57.214Z",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "NMSTestClientGUI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml",
+              "RelativeToolTip": "NMSTestClientGUI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T23:40:56.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Clamp.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Clamp.cs",
-              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Wires\\Clamp.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Clamp.cs",
-              "RelativeToolTip": "NetworkModelService\\DataModel\\Wires\\Clamp.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAwwFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T21:17:52.8Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ff2181e9-1e71-4487-9153-909c5a95e6ee",
-        "Display": 1,
-        "X": 609,
-        "Y": 179,
-        "Width": 1182,
-        "Height": 730,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Conductor.cs",
-              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Conductor.cs",
-              "RelativeDocumentMoniker": "NetworkModelService\\DataModel\\Wires\\Conductor.cs",
-              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NetworkModelService\\DataModel\\Wires\\Conductor.cs",
-              "RelativeToolTip": "NetworkModelService\\DataModel\\Wires\\Conductor.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCkAAAAIAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "NMSTestClientGUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\KorisniK\\Documents\\GitHub\\mppm_project\\ModelLabsProjekat\\ModelLabs\\NMSTestClientGUI\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "NMSTestClientGUI\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwDUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T21:17:46.361Z",
+              "WhenOpened": "2026-01-30T23:36:55.919Z",
               "EditorCaption": ""
             }
           ]

@@ -109,10 +109,27 @@ namespace FTN.Services.NetworkModelService.TestClient
                             CommonTrace.WriteTrace(CommonTrace.TraceError, message);
                         }
                     }
-					else if (str != "q")
-					{
-						PrintUnknownOption();
-					}
+                    else if (str == "5")
+                    {
+                        tgda.GetClampsForACLineSegment(InputGlobalId());    
+                    }
+                    else if (str == "6")
+                    {
+                        tgda.GetClampWithMinLength(InputGlobalId());
+                    }
+                    else if (str == "7")
+                    {
+                        tgda.GetTerminalsForConductingEquipment(InputGlobalId());
+                    }
+                    else if (str == "8")
+                    {
+                        tgda.GetDisconnectedTerminals();
+                    }
+
+                    else if (str != "q")
+                    {
+                        PrintUnknownOption();
+                    }
 
 					Console.WriteLine();
 				}
@@ -136,6 +153,10 @@ namespace FTN.Services.NetworkModelService.TestClient
 			Console.WriteLine("\t2) Get extent values");
 			Console.WriteLine("\t3) Get related values");
             Console.WriteLine("\t4) Test apply update");
+            Console.WriteLine("\t5) Get clampst for ACLineSegment");
+            Console.WriteLine("\t6) Get clamp with minimal length");
+            Console.WriteLine("\t7) Get terminals for ConductingEquipment");
+            Console.WriteLine("\t8) Get disconnected terminals");
 			Console.WriteLine("\tq) Quit");
 		}
 

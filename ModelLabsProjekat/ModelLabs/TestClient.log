@@ -1,0 +1,138 @@
+30-Jan-26 17:11:35 : Network Model Service Test Client is up and running...
+30-Jan-26 17:11:35 : Result directory: ../Results
+30-Jan-26 17:21:45 : Network Model Service Test Client is up and running...
+30-Jan-26 17:21:45 : Result directory: ../Results
+30-Jan-26 17:23:44 : Network Model Service Test Client is up and running...
+30-Jan-26 17:23:44 : Result directory: ../Results
+30-Jan-26 17:27:30 : Network Model Service Test Client is up and running...
+30-Jan-26 17:27:30 : Result directory: ../Results
+30-Jan-26 17:58:28 : Network Model Service Test Client is up and running...
+30-Jan-26 17:58:28 : Result directory: ../Results
+30-Jan-26 18:01:04 : Network Model Service Test Client is up and running...
+30-Jan-26 18:01:04 : Result directory: ../Results
+30-Jan-26 18:05:44 : Network Model Service Test Client is up and running...
+30-Jan-26 18:05:44 : Result directory: ../Results
+30-Jan-26 18:10:18 : Network Model Service Test Client is up and running...
+30-Jan-26 18:10:18 : Result directory: ../Results
+30-Jan-26 18:17:49 : Network Model Service Test Client is up and running...
+30-Jan-26 18:17:49 : Result directory: ../Results
+30-Jan-26 18:28:13 : Network Model Service Test Client is up and running...
+30-Jan-26 18:28:13 : Result directory: ../Results
+30-Jan-26 18:30:21 : Network Model Service Test Client is up and running...
+30-Jan-26 18:30:21 : Result directory: ../Results
+30-Jan-26 18:35:23 : Network Model Service Test Client is up and running...
+30-Jan-26 18:35:23 : Result directory: ../Results
+30-Jan-26 18:51:09 : Network Model Service Test Client is up and running...
+30-Jan-26 18:51:09 : Result directory: ../Results
+30-Jan-26 18:54:02 : Network Model Service Test Client is up and running...
+30-Jan-26 18:54:02 : Result directory: ../Results
+30-Jan-26 19:03:38 : Network Model Service Test Client is up and running...
+30-Jan-26 19:03:38 : Result directory: ../Results
+30-Jan-26 19:04:01 : Getting values method started.
+30-Jan-26 20:02:06 : Network Model Service Test Client is up and running...
+30-Jan-26 20:02:06 : Result directory: ../Results
+30-Jan-26 20:02:19 : Getting values method started.
+30-Jan-26 20:02:48 : Getting values method for entered id = 8589934615 failed.
+	Getting values for resource with ID = 0x0000000200000017 failed. Failed to get values for entity with GID = 0x0000000200000017. Unknown property id = CONDEQ_TERMINAL for entity (GID = 0xLine Segment 1).
+30-Jan-26 20:03:01 : Getting values method started.
+30-Jan-26 20:03:11 : Getting values method for entered id = 8589934616 failed.
+	Getting values for resource with ID = 0x0000000200000018 failed. Failed to get values for entity with GID = 0x0000000200000018. Unknown property id = CONDEQ_TERMINAL for entity (GID = 0xLine Segment 2).
+30-Jan-26 20:03:17 : Getting values method started.
+30-Jan-26 20:03:27 : Getting values method for entered id = 4294967319 failed.
+	Getting values for resource with ID = 0x0000000100000017 failed. Failed to get values for entity with GID = 0x0000000100000017. Unknown property id = CONDEQ_TERMINAL for entity (GID = 0xRectifier Inverter 1).
+30-Jan-26 20:03:36 : Getting values method started.
+30-Jan-26 20:03:40 : Getting values method for entered id = 4294967320 failed.
+	Getting values for resource with ID = 0x0000000100000018 failed. Failed to get values for entity with GID = 0x0000000100000018. Unknown property id = CONDEQ_TERMINAL for entity (GID = 0xRectifier Inverter 2).
+30-Jan-26 20:03:47 : Getting values method started.
+30-Jan-26 20:03:58 : Getting values method for entered id = 12884901907 failed.
+	Getting values for resource with ID = 0x0000000300000013 failed. Failed to get values for entity with GID = 0x0000000300000013. Entity  (GID = 0x0000000300000013) does not exist.
+30-Jan-26 20:04:06 : Getting values method started.
+30-Jan-26 20:04:13 : Getting values method for entered id = 12884901908 failed.
+	Getting values for resource with ID = 0x0000000300000014 failed. Failed to get values for entity with GID = 0x0000000300000014. Entity  (GID = 0x0000000300000014) does not exist.
+30-Jan-26 20:04:19 : Getting values method started.
+30-Jan-26 20:04:36 : Getting values method for entered id = 17179869195 failed.
+	Getting values for resource with ID = 0x000000040000000b failed. Failed to get values for entity with GID = 0x000000040000000b. Unknown property id = CONNECTIVITYNODE_TERMINAL for entity (GID = 0xTerminal 1).
+30-Jan-26 20:04:43 : Getting values method started.
+30-Jan-26 20:04:45 : Getting values method for entered id = 17179869196 failed.
+	Getting values for resource with ID = 0x000000040000000c failed. Failed to get values for entity with GID = 0x000000040000000c. Entity  (GID = 0x000000040000000c) does not exist.
+30-Jan-26 20:04:51 : Getting values method started.
+30-Jan-26 20:04:57 : Getting values method for entered id = 21474836499 failed.
+	Getting values for resource with ID = 0x0000000500000013 failed. Failed to get values for entity with GID = 0x0000000500000013. Entity  (GID = 0x0000000500000013) does not exist.
+30-Jan-26 20:05:05 : Getting values method started.
+30-Jan-26 20:57:26 : Network Model Service Test Client is up and running...
+30-Jan-26 20:57:26 : Result directory: ../Results
+30-Jan-26 20:57:38 : Getting values method started.
+30-Jan-26 20:57:38 : Getting values method successfully finished.
+30-Jan-26 20:57:44 : Getting extent values method started.
+30-Jan-26 20:57:44 : Getting extent values method failed for 8589934617.
+	Invalid Model Code: 8589934617
+30-Jan-26 20:57:47 : Getting extent values method started.
+30-Jan-26 20:57:47 : Getting extent values method failed for 8589934617.
+	Invalid Model Code: 8589934617
+30-Jan-26 20:58:03 : Getting extent values method started.
+30-Jan-26 20:58:03 : Getting extent values method failed for 8589934617.
+	Invalid Model Code: 8589934617
+30-Jan-26 21:00:50 : Network Model Service Test Client is up and running...
+30-Jan-26 21:00:50 : Result directory: ../Results
+30-Jan-26 21:01:08 : Getting values method started.
+30-Jan-26 21:01:08 : Getting values method successfully finished.
+30-Jan-26 21:01:37 : Network Model Service Test Client is up and running...
+30-Jan-26 21:01:37 : Result directory: ../Results
+30-Jan-26 21:11:07 : Network Model Service Test Client is up and running...
+30-Jan-26 21:11:07 : Result directory: ../Results
+30-Jan-26 21:11:20 : Getting values method started.
+30-Jan-26 21:11:21 : Getting values method successfully finished.
+31-Jan-26 00:11:29 : Network Model Service Test Client is up and running...
+31-Jan-26 00:11:29 : Result directory: ../Results
+31-Jan-26 00:11:45 : Getting values method started.
+31-Jan-26 00:11:46 : Getting values method successfully finished.
+31-Jan-26 00:18:21 : Network Model Service Test Client is up and running...
+31-Jan-26 00:18:21 : Result directory: ../Results
+31-Jan-26 00:22:24 : Network Model Service Test Client is up and running...
+31-Jan-26 00:22:24 : Result directory: ../Results
+31-Jan-26 00:24:41 : Network Model Service Test Client is up and running...
+31-Jan-26 00:24:41 : Result directory: ../Results
+31-Jan-26 00:28:34 : Network Model Service Test Client is up and running...
+31-Jan-26 00:28:34 : Result directory: ../Results
+31-Jan-26 00:29:57 : Entering Model Code failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputModelCode() in C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 219
+31-Jan-26 00:29:57 : GetExtentValues failed. Input string was not in a correct format.
+31-Jan-26 00:30:33 : Getting extent values method started.
+31-Jan-26 00:30:35 : Getting extent values method successfully finished.
+31-Jan-26 00:31:01 : Entering entity id failed. Please use hex (0x) or decimal format.
+31-Jan-26 00:31:01 : GetValues failed. Input string was not in a correct format.
+31-Jan-26 00:31:05 : Getting extent values method started.
+31-Jan-26 00:31:06 : Getting extent values method successfully finished.
+31-Jan-26 00:31:25 : Getting extent values method started.
+31-Jan-26 00:31:26 : Getting extent values method successfully finished.
+31-Jan-26 00:34:58 : Network Model Service Test Client is up and running...
+31-Jan-26 00:34:58 : Result directory: ../Results
+31-Jan-26 00:35:35 : Network Model Service Test Client is up and running...
+31-Jan-26 00:35:35 : Result directory: ../Results
+31-Jan-26 00:37:29 : Network Model Service Test Client is up and running...
+31-Jan-26 00:37:29 : Result directory: ../Results
+31-Jan-26 00:39:39 : Network Model Service Test Client is up and running...
+31-Jan-26 00:39:39 : Result directory: ../Results
+31-Jan-26 00:45:34 : Network Model Service Test Client is up and running...
+31-Jan-26 00:45:34 : Result directory: ../Results
+31-Jan-26 00:47:21 : Network Model Service Test Client is up and running...
+31-Jan-26 00:47:21 : Result directory: ../Results
+31-Jan-26 00:50:38 : Network Model Service Test Client is up and running...
+31-Jan-26 00:50:38 : Result directory: ../Results
+31-Jan-26 01:03:18 : Network Model Service Test Client is up and running...
+31-Jan-26 01:03:18 : Result directory: ../Results
+31-Jan-26 01:07:32 : Network Model Service Test Client is up and running...
+31-Jan-26 01:07:32 : Result directory: ../Results
+31-Jan-26 01:08:34 : Network Model Service Test Client is up and running...
+31-Jan-26 01:08:34 : Result directory: ../Results
+31-Jan-26 01:09:09 : Network Model Service Test Client is up and running...
+31-Jan-26 01:09:09 : Result directory: ../Results
+31-Jan-26 01:09:31 : Network Model Service Test Client is up and running...
+31-Jan-26 01:09:31 : Result directory: ../Results
+31-Jan-26 01:12:31 : Network Model Service Test Client is up and running...
+31-Jan-26 01:12:31 : Result directory: ../Results
+31-Jan-26 01:29:03 : Network Model Service Test Client is up and running...
+31-Jan-26 01:29:03 : Result directory: ../Results

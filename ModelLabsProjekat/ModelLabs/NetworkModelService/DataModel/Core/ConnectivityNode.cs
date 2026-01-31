@@ -14,6 +14,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             : base(globalId)
         {
         }
+
         public override int GetHashCode()
         {
             return base.GetHashCode();
@@ -24,9 +25,34 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             if (base.Equals(x))
             {
                 ConnectivityNode obj = (ConnectivityNode)x;
-                return terminals.SequenceEqual(obj.terminals);
+                return CompareHelper.CompareLists(obj.terminals, this.terminals);
             }
             return false;
+        }
+
+        public override bool HasProperty(ModelCode property)
+        {
+            if (property == ModelCode.CONNECTIVITYNODE_TERMINAL)
+                return true;
+            return base.HasProperty(property);
+        }
+
+        public override void GetProperty(Property property)
+        {
+            if (property.Id == ModelCode.CONNECTIVITYNODE_TERMINAL)
+                property.SetValue(terminals);
+            else
+                base.GetProperty(property);
+        }
+
+        public override void SetProperty(Property property)
+        {
+            switch (property.Id)
+            {
+                default:
+                    base.SetProperty(property);
+                    break;
+            }
         }
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
@@ -41,28 +67,33 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
         public override void AddReference(ModelCode referenceId, long globalId)
         {
-            if (referenceId == ModelCode.TERMINAL_CONNECTIVITYNODE)
+            switch (referenceId)
             {
-                terminals.Add(globalId);
-            }
-            else
-            {
-                base.AddReference(referenceId, globalId);
+                case ModelCode.TERMINAL_CONNECTIVITYNODE:
+                    terminals.Add(globalId); 
+                    break;
+                default:
+                    base.AddReference(referenceId, globalId);
+                    break;
             }
         }
 
         public override void RemoveReference(ModelCode referenceId, long globalId)
         {
-            if (referenceId == ModelCode.TERMINAL_CONNECTIVITYNODE)
+            switch (referenceId)
             {
-                terminals.Remove(globalId);
-            }
-            else
-            {
-                base.RemoveReference(referenceId, globalId);
+                case ModelCode.TERMINAL_CONNECTIVITYNODE:
+                    terminals.Remove(globalId); 
+                    break;
+                default:
+                    base.RemoveReference(referenceId, globalId);
+                    break;
             }
         }
 
-        public override bool IsReferenced => terminals.Count > 0;
+        public override bool IsReferenced
+        {
+            get { return terminals.Count != 0 || base.IsReferenced; }
+        }
     }
 }

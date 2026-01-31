@@ -40,12 +40,14 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 
         public override bool HasProperty(ModelCode property)
         {
-            if (property == ModelCode.CLAMP_LENGTHFROMTERMINAL || property == ModelCode.CLAMP_ACLINESEGMENT)
+            switch (property)
             {
-                return true;
+                case ModelCode.CLAMP_LENGTHFROMTERMINAL:
+                case ModelCode.CLAMP_ACLINESEGMENT:
+                    return true;
+                default:
+                    return base.HasProperty(property);
             }
-
-            return base.HasProperty(property);
         }
 
         public override void GetProperty(Property property)
@@ -90,5 +92,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
             base.GetReferences(references, refType);
         }
 
+        public override bool IsReferenced => base.IsReferenced;
     }
 }

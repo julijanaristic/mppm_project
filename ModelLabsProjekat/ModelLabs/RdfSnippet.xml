@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xml:base="http://iec.ch/TC57/CIM100" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns" xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15" xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+<rdf:RDF xml:base="http://www.ucaiug.org/CIM100" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://www.ucaiug.org/CIM100#" xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
 
 	<!--ACLineSegment-->
 	<cim:ACLineSegment rdf:ID="ACLS_1">
@@ -69,7 +69,7 @@
 		<cim:IdentifiedObject.name>T1</cim:IdentifiedObject.name>
 	</cim:Terminal>
 
-	<cim:Terminal rdf:ID=" ">
+	<cim:Terminal rdf:ID="T_2">
 		<cim:Terminal.ConductingEquipment rdf:resource="#ACLS_2"/>
 		<cim:Terminal.connected>false</cim:Terminal.connected>
 		<cim:Terminal.ConnectivityNode rdf:resource="#CN_2"/>

@@ -34,3 +34,12 @@ D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.pdb
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.exe
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.pdb
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.exe.config
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.exe
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.pdb
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.csproj.AssemblyReference.cache
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.csproj.CoreCompileInputs.cache
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestC.9FB1C9DD.Up2Date
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.exe
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.pdb
+C:\Users\KorisniK\Documents\GitHub\mppm_project\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.exe.config

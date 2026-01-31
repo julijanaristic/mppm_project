@@ -96,10 +96,10 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 			ImportACLineSegments();
 			ImportRectifierInverter();
 			ImportClamp();
-			ImportTerminal();
 			ImportConnectivityNode();
+            ImportTerminal();
 
-			LogManager.Log("Loading elements and creating delta completed.", LogLevel.Info);
+            LogManager.Log("Loading elements and creating delta completed.", LogLevel.Info);
 		}
 
         #region Import

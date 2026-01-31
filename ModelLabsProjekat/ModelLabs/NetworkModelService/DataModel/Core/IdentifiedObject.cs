@@ -54,18 +54,16 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
 		public static bool operator ==(IdentifiedObject x, IdentifiedObject y)
 		{
-			if(Object.ReferenceEquals(x, null) && Object.ReferenceEquals(y, null))
+			if(ReferenceEquals(x, null) && ReferenceEquals(y, null))
 			{
 				return true;
 			}
-			else if((Object.ReferenceEquals(x, null) && !Object.ReferenceEquals(y, null)) || (!Object.ReferenceEquals(x, null) && Object.ReferenceEquals(y, null)))
+			if (ReferenceEquals(x, null) || ReferenceEquals(y, null))
 			{
 				return false;
 			}
-			else
-			{
-				return x.Equals(y);
-			}
+
+			return x.Equals(y);
 		}
 
 		public static bool operator !=(IdentifiedObject x, IdentifiedObject y)
@@ -75,7 +73,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
 		public override bool Equals(object x)
 		{
-			if(Object.ReferenceEquals(x, null))
+			if(ReferenceEquals(x, null))
 			{
 				return false;
 			}
@@ -89,7 +87,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		
 		public override int GetHashCode()
 		{
-			return base.GetHashCode();
+			return globalId.GetHashCode();
 		}
 
 		#region IAccess implementation		
@@ -219,9 +217,9 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		{
 			ResourceDescription rd = new ResourceDescription(globalId);
 
-			for (int i = 0; i < propIds.Count; i++)
+			foreach (ModelCode mc in propIds)
 			{
-				rd.AddProperty(GetProperty(propIds[i]));
+				rd.AddProperty(GetProperty(mc));
 			}
 
 			return rd;

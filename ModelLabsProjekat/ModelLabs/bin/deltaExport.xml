@@ -1,0 +1,102 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="10">
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="ACLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Line Segment 1" />
+            <Property id="IDOBJ_NAME" value="LS1" />
+            <Property id="IDOBJ_ALIASNAME" value="ACLS-0001" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="ACLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Line Segment 2" />
+            <Property id="IDOBJ_NAME" value="LS2" />
+            <Property id="IDOBJ_ALIASNAME" value="ACLS-0002" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="RECTIFIERINVERTER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Rectifier Inverter 1" />
+            <Property id="IDOBJ_NAME" value="RI1" />
+            <Property id="IDOBJ_ALIASNAME" value="RI-0001" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffe" type="RECTIFIERINVERTER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Rectifier Inverter 2" />
+            <Property id="IDOBJ_NAME" value="RI2" />
+            <Property id="IDOBJ_ALIASNAME" value="RI-0002" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="CLAMP" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Clamp 1" />
+            <Property id="IDOBJ_NAME" value="C1" />
+            <Property id="IDOBJ_ALIASNAME" value="CL-0001" />
+            <Property id="CLAMP_LENGTHFROMTERMINAL" value="15.5" />
+            <Property id="CLAMP_ACLINESEGMENT" value="0x00000002ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="CLAMP" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Clamp 2" />
+            <Property id="IDOBJ_NAME" value="C2" />
+            <Property id="IDOBJ_ALIASNAME" value="CL-0002" />
+            <Property id="CLAMP_LENGTHFROMTERMINAL" value="32" />
+            <Property id="CLAMP_ACLINESEGMENT" value="0x00000002fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Node 1" />
+            <Property id="IDOBJ_NAME" value="N1" />
+            <Property id="IDOBJ_ALIASNAME" value="CN-0001" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Node 2" />
+            <Property id="IDOBJ_NAME" value="N2" />
+            <Property id="IDOBJ_ALIASNAME" value="CN-0002" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Terminal 1" />
+            <Property id="IDOBJ_NAME" value="T1" />
+            <Property id="IDOBJ_ALIASNAME" value="T-0001" />
+            <Property id="TERMINAL_SEQUENCE" value="1" />
+            <Property id="TERMINAL_CONNECTED" value="1" />
+            <Property id="TERMINAL_PHASES" value="ABC" />
+            <Property id="TERMINAL_CONDEQ" value="0x00000002ffffffff" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000004ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffe" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Terminal 2" />
+            <Property id="IDOBJ_NAME" value="T2" />
+            <Property id="IDOBJ_ALIASNAME" value="T-0002" />
+            <Property id="TERMINAL_SEQUENCE" value="2" />
+            <Property id="TERMINAL_CONNECTED" value="0" />
+            <Property id="TERMINAL_PHASES" value="A" />
+            <Property id="TERMINAL_CONDEQ" value="0x00000002fffffffe" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000004fffffffe" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>
