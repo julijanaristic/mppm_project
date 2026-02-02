@@ -115,15 +115,19 @@ namespace FTN.Services.NetworkModelService.TestClient
                     }
                     else if (str == "6")
                     {
-                        tgda.GetClampWithMinLength(InputGlobalId());
+                        tgda.GetClampWithMinLength();
                     }
                     else if (str == "7")
                     {
-                        tgda.GetTerminalsForConductingEquipment(InputGlobalId());
+                        tgda.GetTerminalsForConductingEquipment();
                     }
                     else if (str == "8")
                     {
                         tgda.GetDisconnectedTerminals();
+                    }
+                    else if (str == "9")
+                    {
+                        tgda.GetConnectedTerminals();
                     }
 
                     else if (str != "q")
@@ -157,6 +161,7 @@ namespace FTN.Services.NetworkModelService.TestClient
             Console.WriteLine("\t6) Get clamp with minimal length");
             Console.WriteLine("\t7) Get terminals for ConductingEquipment");
             Console.WriteLine("\t8) Get disconnected terminals");
+            Console.WriteLine("\t9) Get connected terminals");
 			Console.WriteLine("\tq) Quit");
 		}
 

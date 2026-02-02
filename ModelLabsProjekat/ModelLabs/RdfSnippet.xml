@@ -13,6 +13,18 @@
 		<cim:IdentifiedObject.mRID>Line Segment 2</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>LS2</cim:IdentifiedObject.name>
 	</cim:ACLineSegment>
+	
+	<cim:ACLineSegment rdf:ID="ACLS_3">
+		<cim:IdentifiedObject.aliasName>ACLS-0003</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Line Segment 3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>LS3</cim:IdentifiedObject.name>
+	</cim:ACLineSegment>
+	
+	<cim:ACLineSegment rdf:ID="ACLS_4">
+		<cim:IdentifiedObject.aliasName>ACLS-0004</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Line Segment 4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>LS4</cim:IdentifiedObject.name>
+	</cim:ACLineSegment>
 
 	<!--Clamp-->
 	<cim:Clamp rdf:ID="CL_1">
@@ -30,6 +42,22 @@
 		<cim:IdentifiedObject.mRID>Clamp 2</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>C2</cim:IdentifiedObject.name>
 	</cim:Clamp>
+	
+	<cim:Clamp rdf:ID="CL_3">
+		<cim:Clamp.ACLineSegment rdf:resource="#ACLS_3"/>
+		<cim:Clamp.lengthFromTerminal1>13.5</cim:Clamp.lengthFromTerminal1>
+		<cim:IdentifiedObject.aliasName>CL-0003</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Clamp 3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>C3</cim:IdentifiedObject.name>
+	</cim:Clamp>
+
+	<cim:Clamp rdf:ID="CL_4">
+		<cim:Clamp.ACLineSegment rdf:resource="#ACLS_1"/>
+		<cim:Clamp.lengthFromTerminal1>30.0</cim:Clamp.lengthFromTerminal1>
+		<cim:IdentifiedObject.aliasName>CL-0004</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Clamp 4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>C4</cim:IdentifiedObject.name>
+	</cim:Clamp>
 
 	<!--ReactifierInverter-->
 	<cim:RectifierInverter rdf:ID="RI_1">
@@ -42,6 +70,18 @@
 		<cim:IdentifiedObject.aliasName>RI-0002</cim:IdentifiedObject.aliasName>
 		<cim:IdentifiedObject.mRID>Rectifier Inverter 2</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>RI2</cim:IdentifiedObject.name>
+	</cim:RectifierInverter>
+	
+	<cim:RectifierInverter rdf:ID="RI_3">
+		<cim:IdentifiedObject.aliasName>RI-0003</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Rectifier Inverter 3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RI3</cim:IdentifiedObject.name>
+	</cim:RectifierInverter>
+
+	<cim:RectifierInverter rdf:ID="RI_4">
+		<cim:IdentifiedObject.aliasName>RI-0004</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Rectifier Inverter 4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RI4</cim:IdentifiedObject.name>
 	</cim:RectifierInverter>
 
 	<!--ConnectivityNode-->
@@ -56,13 +96,25 @@
 		<cim:IdentifiedObject.mRID>Node 2</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>N2</cim:IdentifiedObject.name>
 	</cim:ConnectivityNode>
+	
+	<cim:ConnectivityNode rdf:ID="CN_3">
+		<cim:IdentifiedObject.aliasName>CN-0003</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Node 3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>N3</cim:IdentifiedObject.name>
+	</cim:ConnectivityNode>
+
+	<cim:ConnectivityNode rdf:ID="CN_4">
+		<cim:IdentifiedObject.aliasName>CN-0004</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Node 4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>N4</cim:IdentifiedObject.name>
+	</cim:ConnectivityNode>
 
 	<!--Terminal-->
 	<cim:Terminal rdf:ID="T_1">
 		<cim:Terminal.ConductingEquipment rdf:resource="#ACLS_1"/>
 		<cim:Terminal.connected>true</cim:Terminal.connected>
 		<cim:Terminal.ConnectivityNode rdf:resource="#CN_1"/>
-		<cim:Terminal.phases>ABC </cim:Terminal.phases>
+		<cim:Terminal.phases>ABC</cim:Terminal.phases>
 		<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
 		<cim:IdentifiedObject.aliasName>T-0001</cim:IdentifiedObject.aliasName>
 		<cim:IdentifiedObject.mRID>Terminal 1</cim:IdentifiedObject.mRID>
@@ -78,6 +130,28 @@
 		<cim:IdentifiedObject.aliasName>T-0002</cim:IdentifiedObject.aliasName>
 		<cim:IdentifiedObject.mRID>Terminal 2</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>T2</cim:IdentifiedObject.name>
+	</cim:Terminal>
+	
+	<cim:Terminal rdf:ID="T_3">
+		<cim:Terminal.ConductingEquipment rdf:resource="#ACLS_1"/>
+		<cim:Terminal.connected>true</cim:Terminal.connected>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CN_3"/>
+		<cim:Terminal.phases>ABC</cim:Terminal.phases>
+		<cim:Terminal.sequenceNumber>3</cim:Terminal.sequenceNumber>
+		<cim:IdentifiedObject.aliasName>T-0003</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Terminal 3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T3</cim:IdentifiedObject.name>
+	</cim:Terminal>
+
+	<cim:Terminal rdf:ID="T_4">
+		<cim:Terminal.ConductingEquipment rdf:resource="#ACLS_2"/>
+		<cim:Terminal.connected>true</cim:Terminal.connected>
+		<cim:Terminal.ConnectivityNode rdf:resource="#CN_2"/>
+		<cim:Terminal.phases>A</cim:Terminal.phases>
+		<cim:Terminal.sequenceNumber>4</cim:Terminal.sequenceNumber>
+		<cim:IdentifiedObject.aliasName>T-0004</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Terminal 4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T4</cim:IdentifiedObject.name>
 	</cim:Terminal>
 
 </rdf:RDF>

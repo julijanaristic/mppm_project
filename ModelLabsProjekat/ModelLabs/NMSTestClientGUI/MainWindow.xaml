@@ -71,7 +71,6 @@
                             <Label Content="Global ID:" Grid.Row="0" Grid.Column="0"/>
                             <TextBox Grid.Row="0" Grid.Column="1" x:Name="TbGetValuesGid" Height="30" Width="650" Margin="0,0,0,10" Background="#111827" Foreground="White"/>
                             <Button x:Name="BtnGetValues" Content="Get Values" Click="BtnGetValues_Click" Grid.Row="1" Grid.ColumnSpan="2"/>
-                            <!--Button Grid.Column="1" x:Name="BtnScan" Content="Get Scan" Click="BtnScan_Click" Grid.Row="1" Grid.ColumnSpan="1"/-->
                         </Grid>
                     </StackPanel>
 
@@ -121,17 +120,22 @@
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
                     <StackPanel>
-                        <Label Content="ACLineSegment GID:"/>
+                        <Label Content="Get all clamps for the selected ACLineSegment"/>
                         <TextBox x:Name="TbAclineGid"/>
-                        <Button x:Name="BtnGetClamps" Content="Get Clamps" Click="BtnGetClamps_Click"/>
+                        <Button x:Name="BtnGetClamps" Content="All Clamps" Click="BtnGetClamps_Click"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+                        <Label Content="Get clamp with minimal length"/>
                         <Button x:Name="BtnClampMinLength" Content="Clamp With Min Length" Click="BtnClampMinLength_Click"/>
                     </StackPanel>
 
-                    <RichTextBox x:Name="RtbClamps" Grid.Row="1"/>
+                    <RichTextBox x:Name="RtbClamps" Grid.Row="2"/>
                 </Grid>
             </TabItem>
 
@@ -143,10 +147,23 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel>
-                        <Label Content="ConductingEquipment GID:"/>
-                        <TextBox x:Name="TbCondEqGid"/>
-                        <Button x:Name="BtnGetTerminals" Content="Get Terminals" Click="BtnGetTerminals_Click"/>
-                        <Button x:Name="BtnDisconnectedTerminals" Content="Disconnected Terminals" Click="BtnDisconnectedTerminals_Click"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.ColumnSpan="2" Content="Get all terminals"/>
+                            <Button Grid.Row="1" Grid.ColumnSpan="2" x:Name="BtnTerminals" Content="All Terminals" Click="BtnGetTerminals_Click"/>
+                            <Label Grid.Row="2" Grid.ColumnSpan="2" Content="Get connected and disconnected terminals"/>
+                            <Button Grid.Row="3" x:Name="BtnDisconnectedTerminals" Content="Disconnected Terminals" Click="BtnDisconnectedTerminals_Click"/>
+                            <Button Grid.Row="3" Grid.Column="1" x:Name="BtnConnectedTerminals" Content="Connected Terminals" Click="BtnConnectedTerminals_Click"/>
+                        </Grid>
                     </StackPanel>
 
                     <RichTextBox x:Name="RtbTerminals" Grid.Row="1"/>

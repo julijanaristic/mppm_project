@@ -772,11 +772,17 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
             return GetRelatedValues(acLineSegmentGid, association);
         }
 
-        public long GetClampWithMinLength(long acLineSegmentGid)
+        public long GetClampWithMinLength()
         {
             Console.WriteLine("Getting clamp with minimal lengthFromTerminal...");
 
-            List<long> clampIds = GetClampsForACLineSegment(acLineSegmentGid);
+            var clampIds = GetExtentValues(ModelCode.CLAMP);
+
+            if (clampIds == null || clampIds.Count == 0)
+            {
+                Console.WriteLine("No clamps found in the system.");
+                return 0;
+            }
 
             double minLength = double.MaxValue;
             long resultGid = 0;
@@ -802,17 +808,10 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
             return resultGid;
         }
 
-        public List<long> GetTerminalsForConductingEquipment(long conductingEpGid)
+        public List<long> GetTerminalsForConductingEquipment()
         {
-            Console.WriteLine("Getting terminals for ConductingEquipment...");
-
-            Association association = new Association
-            {
-                PropertyId = ModelCode.CONDEQ_TERMINAL,
-                Type = ModelCode.TERMINAL
-            };
-
-            return GetRelatedValues(conductingEpGid, association);
+            Console.WriteLine("Getting all terminals in the system...");
+            return GetExtentValues(ModelCode.TERMINAL);
         }
 
         public List<long> GetDisconnectedTerminals()
@@ -834,6 +833,28 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
             }
 
             Console.WriteLine($"Disconnected terminals count: {result.Count}");
+            return result;
+        }
+
+        public List<long> GetConnectedTerminals()
+        {
+            Console.WriteLine("Getting connected terminals...");
+
+            List<long> result = new List<long>();
+            List<long> terminalIds = GetExtentValues(ModelCode.TERMINAL);
+
+            foreach (long gid in terminalIds)
+            {
+                ResourceDescription rd = GetValues(gid);
+                Property p = rd.GetProperty(ModelCode.TERMINAL_CONNECTED);
+
+                if (p != null && p.AsBool() == true)
+                {
+                    result.Add(gid);
+                }
+            }
+
+            Console.WriteLine($"Connected terminals count: {result.Count}");
             return result;
         }
 

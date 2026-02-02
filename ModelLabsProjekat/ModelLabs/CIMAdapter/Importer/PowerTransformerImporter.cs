@@ -114,14 +114,20 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
             foreach (var pair in cimObjects)
             {
                 FTN.ACLineSegment cim = pair.Value as FTN.ACLineSegment;
-
 				ResourceDescription rd = CreateACLineSegmentResourceDescription(cim);
 
 				if (rd != null)
 				{
                     delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+					report.Report.Append("ACLineSegment ID = ").Append(cim.ID).AppendLine(" SUCCESFULLY converted to GID = ").AppendLine(rd.Id.ToString());
                 }
+				else
+				{
+					report.Report.Append("ACLineSegment ID = ").Append(cim.ID).AppendLine(" FAILED to be converted");
+				}
             }
+
+			report.Report.AppendLine();
         }
 
 		private ResourceDescription CreateACLineSegmentResourceDescription(FTN.ACLineSegment cim)
@@ -153,11 +159,19 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 				if (rd != null)
 				{
 					delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
-				}
-			}
+                    report.Report.Append("RectifierInverter ID = ").Append(cim.ID).AppendLine(" SUCCESFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                }
+				else
+				{
+                    report.Report.Append("RectifierInverter ID = ").Append(cim.ID).AppendLine(" FAILED to be converted");
+                }
+            }
+
+            report.Report.AppendLine();
+
         }
 
-		private ResourceDescription CreateRectifierInverterResourceDescription(FTN.RectifierInverter cim)
+        private ResourceDescription CreateRectifierInverterResourceDescription(FTN.RectifierInverter cim)
 		{
             long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.RECTIFIERINVERTER, importHelper.CheckOutIndexForDMSType(DMSType.RECTIFIERINVERTER));
 
@@ -183,11 +197,18 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
                 if (rd != null)
                 {
                     delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                    report.Report.Append("Clamp ID = ").Append(cim.ID).AppendLine(" SUCCESFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                }
+                else
+                {
+                    report.Report.Append("Clamp ID = ").Append(cim.ID).AppendLine(" FAILED to be converted");
                 }
             }
+
+            report.Report.AppendLine();
         }
 
-		private ResourceDescription CreateClampResourceDescription(FTN.Clamp cim)
+        private ResourceDescription CreateClampResourceDescription(FTN.Clamp cim)
 		{
             long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.CLAMP, importHelper.CheckOutIndexForDMSType(DMSType.CLAMP));
 
@@ -198,7 +219,44 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 			return rd;
         }
 
-		private void ImportTerminal()
+        private void ImportConnectivityNode()
+        {
+            SortedDictionary<string, object> cimObjects = concreteModel.GetAllObjectsOfType("FTN.ConnectivityNode");
+
+            if (cimObjects == null) return;
+
+            foreach (var pair in cimObjects)
+            {
+                FTN.ConnectivityNode cim = pair.Value as FTN.ConnectivityNode;
+
+                ResourceDescription rd = CreateConnectivityNodeResourceDescription(cim);
+
+                if (rd != null)
+                {
+                    delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                    report.Report.Append("ConnectivityNode ID = ").Append(cim.ID).AppendLine(" SUCCESFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                }
+                else
+                {
+                    report.Report.Append("ConnectivityNode ID = ").Append(cim.ID).AppendLine(" FAILED to be converted");
+                }
+            }
+
+            report.Report.AppendLine();
+        }
+
+        private ResourceDescription CreateConnectivityNodeResourceDescription(FTN.ConnectivityNode cim)
+        {
+            long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.CONNECTIVITYNODE, importHelper.CheckOutIndexForDMSType(DMSType.CONNECTIVITYNODE));
+
+            ResourceDescription rd = new ResourceDescription(gid);
+            importHelper.DefineIDMapping(cim.ID, gid);
+
+            PowerTransformerConverter.PopulateConnectivityNodeProperties(cim, rd, importHelper, report);
+            return rd;
+        }
+
+        private void ImportTerminal()
 		{
             SortedDictionary<string, object> cimObjects = concreteModel.GetAllObjectsOfType("FTN.Terminal");
 
@@ -213,11 +271,18 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
                 if (rd != null)
                 {
                     delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                    report.Report.Append("Terminal ID = ").Append(cim.ID).AppendLine(" SUCCESFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                }
+                else
+                {
+                    report.Report.Append("Terminal ID = ").Append(cim.ID).AppendLine(" FAILED to be converted");
                 }
             }
+
+            report.Report.AppendLine();
         }
 
-		private ResourceDescription CreateTerminalResourceDescription(FTN.Terminal cim)
+        private ResourceDescription CreateTerminalResourceDescription(FTN.Terminal cim)
 		{
             long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.TERMINAL, importHelper.CheckOutIndexForDMSType(DMSType.TERMINAL));
 
@@ -228,35 +293,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 			return rd;
         }
 
-		private void ImportConnectivityNode()
-		{
-            SortedDictionary<string, object> cimObjects = concreteModel.GetAllObjectsOfType("FTN.ConnectivityNode");
-
-            if (cimObjects == null) return;
-
-            foreach (var pair in cimObjects)
-            {
-                FTN.ConnectivityNode cim = pair.Value as FTN.ConnectivityNode;
-
-				ResourceDescription rd = CreateConnectivityNodeResourceDescription(cim);
-
-				if (rd != null)
-				{
-                    delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
-                }
-            }
-        }
-
-		private ResourceDescription CreateConnectivityNodeResourceDescription(FTN.ConnectivityNode cim)
-		{
-            long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.CONNECTIVITYNODE, importHelper.CheckOutIndexForDMSType(DMSType.CONNECTIVITYNODE));
-
-            ResourceDescription rd = new ResourceDescription(gid);
-            importHelper.DefineIDMapping(cim.ID, gid);
-
-            PowerTransformerConverter.PopulateConnectivityNodeProperties(cim, rd, importHelper, report);
-			return rd;
-        }
 
         #endregion Import
     }

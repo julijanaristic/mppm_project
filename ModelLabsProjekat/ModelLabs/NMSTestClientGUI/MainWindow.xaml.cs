@@ -67,7 +67,14 @@ namespace NMSTestClientGUI
                 ModelCode mc;
                 ModelCodeHelper.GetModelCodeFromString(TbExtentModelCode.Text, out mc);
                 var ids = testGda.GetExtentValues(mc);
-                ShowResult(RtbExtentValues, ExtentToString(ids));
+                var sb = new StringBuilder();
+                for (int i = 0; i < ids.Count; i++)
+                {
+                    sb.AppendLine($"{i + 1}");
+                    sb.AppendLine(DescribeResource(ids[i]));
+                    sb.AppendLine();
+                }
+                ShowResult(RtbExtentValues, sb.ToString());
             }
             catch (Exception ex)
             {
@@ -91,7 +98,14 @@ namespace NMSTestClientGUI
                 };
 
                 var ids = testGda.GetRelatedValues(gid, a);
-                ShowResult(RtbRelatedValues, ExtentToString(ids));
+                var sb = new StringBuilder();
+                for (int i = 0; i < ids.Count; i++)
+                {
+                    sb.AppendLine($"{i + 1}");
+                    sb.AppendLine(DescribeResource(ids[i]));
+                    sb.AppendLine();
+                }
+                ShowResult(RtbRelatedValues, sb.ToString());
             }
             catch (Exception ex)
             {
@@ -105,7 +119,14 @@ namespace NMSTestClientGUI
             {
                 long gid = ParseGlobalId(TbAclineGid.Text);
                 var ids = testGda.GetClampsForACLineSegment(gid);
-                ShowResult(RtbClamps, ExtentToString(ids));
+                var sb = new StringBuilder();
+                for (int i = 0; i < ids.Count; i++)
+                {
+                    sb.AppendLine($"{i + 1}");
+                    sb.AppendLine(DescribeResource(ids[i]));
+                    sb.AppendLine();
+                }
+                ShowResult(RtbClamps, sb.ToString());
             }
             catch (Exception ex)
             {
@@ -117,13 +138,14 @@ namespace NMSTestClientGUI
         {
             try
             {
-                long gid = ParseGlobalId(TbAclineGid.Text);
-                long minClamp = testGda.GetClampWithMinLength(gid);
-                var rd = testGda.GetValues(minClamp);
-                var sb = new StringBuilder();
-                foreach (var p in rd.Properties)
-                    sb.AppendLine($"{p.Id,-40} = {p.GetValue()}");
-                ShowResult(RtbClamps, "MIN CLAMP:\n" + sb.ToString());
+                long minClamp = testGda.GetClampWithMinLength();
+
+                if (minClamp == 0)
+                {
+                    ShowResult(RtbClamps, "No clamps in the system.");
+                    return;
+                }
+                ShowResult(RtbClamps, DescribeResource(minClamp));
             }
             catch (Exception ex)
             {
@@ -135,9 +157,15 @@ namespace NMSTestClientGUI
         {
             try
             {
-                long gid = ParseGlobalId(TbCondEqGid.Text);
-                var ids = testGda.GetTerminalsForConductingEquipment(gid);
-                ShowResult(RtbTerminals, ExtentToString(ids));
+                var ids = testGda.GetTerminalsForConductingEquipment();
+                var sb = new StringBuilder();
+                for (int i = 0; i < ids.Count; i++)
+                {
+                    sb.AppendLine($"{i + 1}");
+                    sb.AppendLine(DescribeResource(ids[i]));
+                    sb.AppendLine();
+                }
+                ShowResult(RtbTerminals, sb.ToString());
             }
             catch (Exception ex)
             {
@@ -150,7 +178,34 @@ namespace NMSTestClientGUI
             try
             {
                 var ids = testGda.GetDisconnectedTerminals();
-                ShowResult(RtbTerminals, ExtentToString(ids));
+                var sb = new StringBuilder();
+                for (int i = 0; i < ids.Count; i++)
+                {
+                    sb.AppendLine($"{i + 1}");
+                    sb.AppendLine(DescribeResource(ids[i]));
+                    sb.AppendLine();
+                }
+                ShowResult(RtbTerminals, sb.ToString());
+            }
+            catch (Exception ex)
+            {
+                ShowResult(RtbTerminals, "ERROR: " + ex.Message);
+            }
+        }
+
+        private void BtnConnectedTerminals_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var ids = testGda.GetConnectedTerminals();
+                var sb = new StringBuilder();
+                for (int i = 0; i < ids.Count; i++)
+                {
+                    sb.AppendLine($"{i + 1}");
+                    sb.AppendLine(DescribeResource(ids[i]));
+                    sb.AppendLine();
+                }
+                ShowResult(RtbTerminals, sb.ToString());
             }
             catch (Exception ex)
             {
@@ -183,14 +238,41 @@ namespace NMSTestClientGUI
 
         private string FormatPropertyValue(Property p)
         {
-            // ako je vektor referenci (ili bilo koji Int64 vektor)
             if (p.Type == PropertyType.ReferenceVector ||
                 p.Type == PropertyType.Int64Vector)
             {
-                var list = p.AsReferences();   // ili (List<long>)p.GetValue()
+                var list = p.AsReferences();   
                 return "[" + string.Join(", ", list.Select(id => $"0x{id:X16}")) + "]";
             }
             return p.GetValue()?.ToString() ?? "<empty>";
+        }
+
+        private string DescribeResource(long gid)
+        {
+            try
+            {
+                var rd = testGda.GetValues(gid);
+                if (rd == null)
+                    return $"GID: 0x{gid:X16}\r\n<GetValues returned null>";
+
+                var sb = new StringBuilder();
+                sb.AppendLine($"GID: 0x{gid:X16}");
+
+                var nameProp = rd.GetProperty(ModelCode.IDOBJ_NAME);
+                string nameValue = nameProp?.AsString() ?? "<no name>";
+                sb.AppendLine($"NAME: {nameValue}");
+                sb.AppendLine();
+
+                sb.AppendLine("PROPERTIES:");
+                foreach (var p in rd.Properties)
+                    sb.AppendLine($"{p.Id} = {FormatPropertyValue(p)}");
+
+                return sb.ToString();
+            }
+            catch (Exception ex)
+            {
+                return $"GID: 0x{gid:X16}\r\nERROR: {ex.Message}";
+            }
         }
 
     }
